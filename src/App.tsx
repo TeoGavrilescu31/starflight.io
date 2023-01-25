@@ -13,7 +13,7 @@ const DATA = gql`
 export const App = () => {
   const { loading, error, data } = useQuery(DATA)
 
-  if (loading) return <>Loading...</>
+  if (loading) return <>Loading....</>
 
   if (error) return <>Error! ${error.message}</>
 
