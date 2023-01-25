@@ -1,0 +1,18 @@
+.planet {
+  color: #ffe81f;
+
+  span {
+    color: white;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .tatooine {
+    position: absolute;
+    position: fixed;
+    width: 100vw;
+    top: 65%;
+  }
+}
