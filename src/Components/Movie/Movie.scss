@@ -1,0 +1,87 @@
+.movie {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 5%;
+  text-shadow: rgb(5, 5, 5) 1px 0 10px;
+  font-size: 30px;
+  transition: all 0.5s;
+  color: white;
+
+  span {
+    color: #ffe81f;
+  }
+
+  &-1 {
+    background: url('../../Assets/Movies/ThePhantomMenace.webp') no-repeat
+      center;
+    background-size: 300px 500px;
+    background-position: 0px 0px;
+  }
+
+  &-1:hover {
+    background-size: 400px 600px;
+    background-position: -50px -50px;
+  }
+
+  &-2 {
+    background: url('../../Assets/Movies/AttackoftheClones.webp') no-repeat
+      center;
+    background-size: 300px 500px;
+    background-position: 0px 0px;
+  }
+
+  &-2:hover {
+    background-size: 400px 600px;
+    background-position: -50px -50px;
+  }
+
+  &-3 {
+    background: url('../../Assets/Movies/RevengeoftheSith.webp') no-repeat
+      center;
+    background-size: 300px 500px;
+    background-position: 0px 0px;
+  }
+
+  &-3:hover {
+    background-size: 400px 600px;
+    background-position: -50px -50px;
+  }
+
+  &-4 {
+    background: url('../../Assets/Movies/ANewHope.webp') no-repeat center;
+    background-size: 300px 500px;
+    background-position: 0px 0px;
+  }
+
+  &-4:hover {
+    background-size: 400px 600px;
+    background-position: -50px -50px;
+  }
+
+  &-5 {
+    background: url('../../Assets/Movies/TheEmpireStrikesBack.webp') no-repeat
+      center;
+    background-size: 300px 500px;
+    background-position: 0px 0px;
+  }
+
+  &-5:hover {
+    background-size: 400px 600px;
+    background-position: -50px -50px;
+  }
+
+  &-6 {
+    background: url('../../Assets/Movies/ReturnoftheJedi.webp') no-repeat center;
+    background-size: 300px 500px;
+    background-position: 0px 0px;
+  }
+
+  &-6:hover {
+    background-size: 400px 600px;
+    background-position: -50px -50px;
+  }
+}

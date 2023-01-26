@@ -1,0 +1,21 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
+* {
+  font-family: 'Star Wars', sans-serif;
+  font-weight: 300;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  text-decoration: none;
+}
+
+body {
+  background: url('./Assets/StarBackground.png');
+  text-align: center;
+}
+
+h1 {
+  color: #ffe81f;
+}

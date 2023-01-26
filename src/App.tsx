@@ -1,28 +1,16 @@
-import { useQuery, gql } from '@apollo/client'
-
-const DATA = gql`
-  query ExampleQuery {
-    allPlanets {
-      planets {
-        name
-      }
-    }
-  }
-`
+import './App.scss'
+import MainPage from './Pages/MainPage/MainPage'
+import { BrowserRouter } from 'react-router-dom'
+import { Route, Routes } from 'react-router'
+import MoviePage from './Pages/MoviePage/MoviePage'
 
 export const App = () => {
-  const { loading, error, data } = useQuery(DATA)
-
-  if (loading) return <>Loading...</>
-
-  if (error) return <>Error! ${error.message}</>
-
   return (
-    <>
-      <div>
-        <h1>Hello Teo!</h1>
-      </div>
-      {JSON.stringify(data)}
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path={'/'} element={<MainPage />} />
+        <Route path={'/movie/:ID'} element={<MoviePage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
