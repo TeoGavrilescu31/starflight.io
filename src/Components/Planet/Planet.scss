@@ -1,5 +1,7 @@
 .planet {
   color: #ffe81f;
+  display: flex;
+  flex-direction: column;
 
   span {
     color: white;

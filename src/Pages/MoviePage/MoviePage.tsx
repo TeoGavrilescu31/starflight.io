@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import Planet from '../../Components/Planet/Planet'
-import { Planets, Starships } from '../../Assets'
+import { Starships } from '../../Assets'
 import './MoviePage.scss'
 import { useGetFilmPlanets } from '../../CustomHooks/CustomHooks'
 
@@ -30,15 +30,6 @@ const MoviePage = () => {
         (planet: { name: string; id: string }) => (
           <>
             <Planet planet={planet} key={planet.id} />
-            {planet.name == 'Tatooine' ? (
-              <img
-                src={Planets[planet.name]}
-                alt={data?.film?.planetConnection?.planets[0].name}
-                draggable={false}
-              />
-            ) : (
-              ''
-            )}
           </>
         )
       )}
@@ -47,15 +38,11 @@ const MoviePage = () => {
         (starship: { name: string }, index: number) => (
           <>
             <p key={index}>{starship.name}</p>
-            {starship.name == 'Millennium Falcon' ? (
-              <img
-                src={Starships[starship.name.replace(/\s+/g, '')]}
-                alt={starship.name}
-                draggable={false}
-              />
-            ) : (
-              ''
-            )}
+            <img
+              src={Starships[starship.name.replace(/\s/g, '').replace('-', '')]}
+              alt={starship.name}
+              draggable={false}
+            />
           </>
         )
       )}

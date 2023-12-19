@@ -3,16 +3,16 @@
 * {
   font-family: 'Star Wars', sans-serif;
   font-weight: 300;
-  user-select: none;
+  text-decoration: none;
+  /* user-select: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  text-decoration: none;
+  -ms-user-select: none;*/
 }
 
 body {
-  background: url('./Assets/StarBackground.png');
+  background: url('./Assets/StarBackground.png') fixed;
   text-align: center;
 }
 

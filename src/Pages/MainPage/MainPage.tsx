@@ -12,21 +12,20 @@ const MainPage = () => {
   if (error) return <>Error! ${error.message}</>
 
   return (
-    <>
+    <div className="main-page">
       <div>
         <h1>StarFlight.io</h1>
       </div>
       <MoviesWrapper>
         {data?.allFilms?.films?.map(
           (film: { title: string; episodeID: number }, index: number) => (
-            <Link to={`/movie/${index + 1}`} key={index}>
+            <Link to={`/movie/${index + 1}`} key={index} draggable={false}>
               <Movie movie={film} />
             </Link>
           )
         )}
       </MoviesWrapper>
-      <hr />
-    </>
+    </div>
   )
 }
 
